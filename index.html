@@ -62,7 +62,7 @@
                         <a class="page-scroll" href="#workExperience">Work Experience</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#academicProjects">Projects</a>
+                        <a class="page-scroll" href="#projects">Projects</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#technicalExpertise">Technical Expertise</a>
@@ -120,17 +120,15 @@
     <section id="education" class="container content-section text-left">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>Education</h2>				
-				<!-- <section class="container text-left"> -->
+                <h2>Education</h2>
                 <p><b>The University of North Carolina at Charlotte</b>
 				<br>Masters in Computer Science (GPA - 4.0)
 				<br>Dec 2017 (Expected)<br><br>
 					   
-				<b>Pune University, India</b>
+				<b>University of Pune, India</b>
 				<br>Bachelors in Computer Engineering (Grade - Distinction)
 				<br>June 2013
 				</p>
-				<!-- </section>	    -->
             </div>
         </div>
     </section>
@@ -151,23 +149,97 @@
     </section>
     
     <!-- Academic Projects Section -->
-    <section id="academicProjects" class="container content-section text-left">
+    <section id="projects" class="container content-section text-left">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Projects</h2>
-                <p>To be added</p>
-				<!--
-                <section class="container text-left">
-				<h4>Projects</h4>
-				
-                <li>Windows Device in User Space (RnD_Win_DUSE)
+                <h3><u>At Calsoft:</u></h3>
+				<p>
+				<b><i><u>Windows Device in User Space (RnD_Win_DUSE)</i></u></b><br>
+				Developed a Device in user space to get access to block data from user space in I/O path. Currently, Windows doesn't have the mechanism to get access to block data from I/O path in the user space. This is similar to FUSE in Linux which provides an access to non-privileged user to create its own file system in user space.
+				<br><br>
+				<u>Technologies Used:</u><br>
+				• Languages – C#<br>
+				• Tools – Visual Studio 2013<br>
+				<br>
+				<u>Details of work done:</u><br>
+				• Role: Sr. Development Engineer.<br>
+				• Involved in Designing the product.<br>
+				• Implemented the back end of the Cloud connector to AZURE cloud in C#.<br>			
 					   
-				<li>Windows Backup and Recovery Product Installer
-					   
-				<li>Change Block Tracking for Hyper-V
+				<br><br><b><i><u>Windows Backup and Recovery Product Installer</i></u></b><br>
+				<u>Part I:</u> The project includes using the VMWare vSphere APIs in order to automate the tasks during the installation process for ESXi.<br>
+				<u>Part II:</u> The project includes using the Hyper-V APIs in order to automate the tasks during the installation process for Hyper-V.<br>
+				<br>
+				<u>Client:</u> Unitrends Inc. (SC, USA)
+				<br><br>
+				<u>Technologies Used:</u><br>
+				• Languages – C# <br>
+				• Scripting : Powershell<br>
+				• OS and Hypervisor – Win 8, Win 2K12 R2, Win 2K08 R2, VMware ESXi (Versions: 5.0, 5.1, 5.5), HyperV<br>
+				• Tools – Visual Studio 2012, Installshield 2014<br>
+				<br>
+				<u>Details of work done:</u><br>
+				• Role: Development Engineer.<br>
+				• Designing the product.<br>
+				• Implemented the back end of the installer in C# for VMWare ESXi and HyperV.<br>
+				• Implemented the front end of the installer in Installshield Advanced UI for VMWare ESXi and Hyper-V.<br>
+				• Unit testing, Integration testing, Regression testing, Functional testing, and Performance testing.<br>
+				• Bug fixing.<br>
+				• Code reviewing and Knowledge sharing.<br>
+				• Client communication.<br>
+
+				<br><br><b><u><i>Change Block Tracking for Hyper-V</i></u></b><br>
+				The objective of this project is to build a Change Block Tracking driver which will keep track of changed blocks for virtual disks at run time (incremental backup). The product captures disk level backup of the guest OS installed on the hyper-visor. The backup application would trigger a snapshot event from which point onward all I/O operations needs to be captured.. The Pass-through mini-filter driver would trap all the I/O operations at file system level in (offset, length) format. This would then be converted to disk level (offset, length) format and sent back to the backup application.
+				<br><br>
+				<u>Technologies Used:</u><br>
+				• Languages – C, C++ <br>
+				• OS and Hypervisor – Win 2K12, Win 2K12R2, HyperV, Win 8<br>
+				• Tools – VS, BugZilla, Driver Verifier, HCK kit, IO Meter.<br> 
+				<br>
+				<u>Details of work done:</u><br>
+				• Role : Development Engineer.<br>
+				• Design , Development , Unit Testing and Bug fixing of XML module in the User space (Using XMLLite in C).<br>
+				• User-space Logging mechanism implementation (in C++).<br>
+				• Tools development for Testers aid.<br>
+				• Performance monitoring and testing.<br>
+				</p>
+				<br><h3><u>At UNC Charlotte:</u></h3>
+				<p>
+				<b><i><u>Distance Vector Routing Protocol Implementation</i></u></b><br>
+				A multithreaded application using UDP connection and socket programming in C#.
+				The main idea is to find the minimum cost between each nodes combination in the system.<br>
+				We have an input file where we keep the number of neighbors, the names of the neighbors, the port numbers of the neighbors. The input file basically acts as a forwarding table.<br>
+				After every 15 seconds, we send out the current state of each node to all its neighbors. And, the receiving node will calculate the minimum cost to all the nodes, based on the received inputs from its neighbors.<br>
+				I have used the <b>Bellman-Ford equation</b> to calculate the costs.<br>
+				We can also edit the input file dynamically by updating the costs and the system will recalculate the costs and next hops based on the new values.
+				<br><br>
+				<u>Technologies Used:</u><br>
+				• Languages – C#<br>
+				• Tools – Visual Studio 2015<br>
+				<br>
+				<u>Details of work done:</u><br>				
+				• Completed the whole project individually as a part of the course ITCS 6166: Computer Communications and Networks course.<br>
+				• Implemented a command-line application for the protocol.<br>
 				
-				</section>	   
-				-->
+				<br><br>
+				<b><i><u>HTTP/1.1 Protocol Implementation</i></u></b><br>				
+				The objective of this project was to implement the HTTP/1.1 request commands (GET and PUT) using client server framework.
+				Socket programming was used to accomplish the task of communication between the client and the server. HTTP commands such as GET and PUT were used as the communication protocols.
+
+				<br><br>
+				<u>Technologies Used:</u><br>
+				• Languages – C#<br>
+				• Tools – Visual Studio 2015<br>
+				<br>
+				<u>Details of work done:</u><br>				
+				• Implemented GET and PUT methods of HTTP/1.1 protocol using TCP connection and socket programming in C#.<br>
+				• Completed the whole project individually as a part of the course ITCS 6166: Computer Communications and Networks course.<br>
+				• Implemented a command-line application for the protocol.<br>
+				</p>
+				<br><h3><u>At University of Pune:</u></h3>
+				<p>
+				</p>
             </div>
         </div>
     </section>    
@@ -193,9 +265,10 @@
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Research and Publications</h2>
                 <p>
-				• Published an Implementation paper <a href="http://iraj.in/journal/journal_file/journal_pdf/3-19-139082332919-23.pdf">‘Parallel Data Compression Using LZMA’</a> at ‘24th International Conference on Advanced Engineering and Technology, India, 2013’, and won the Best Paper Award.<br><br>
+				• Published an Implementation paper <a href="http://iraj.in/journal/journal_file/journal_pdf/3-19-139082332919-23.pdf">‘Parallel Data Compression Using LZMA’</a> at ‘24th International Conference on Advanced Engineering and Technology, India, 2013’, and won the <b>Best Paper Award.</b><br><br>
 				• Co-Headed ‘CRYSIS’, a ‘C-coding competition’ event hosted by the Computer Engineering department under the colleges Technical Event and a National level symposium “INNOVISION 2k12”.<br><br>
-				• Member of Organizing Committee of ARC (Amateur Robotics Club) at Computer Engineering department of RSCOE, Pune, India.
+				• Member of Organizing Committee of ARC (Amateur Robotics Club) at Computer Engineering department of RSCOE, Pune, India.<br><br>
+				• Member of First Years Students Association at Computer Engineering department of RSCOE, Pune, India.
 				</p>
             </div>
         </div>
@@ -206,7 +279,15 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Awards and Achievements</h2>
-                <p>To be added</p>
+                <p>
+					• Won <b>‘Rising Star Award’</b> at Calsoft Pvt. Ltd. for 2015 for my work performance and contribution to the company.<br><br>
+					• Won <b>‘Spot Award’</b> at Calsoft Pvt. Ltd. in February 2016 for my contribution in the project.<br><br>
+					• <b>Top 5 ranker</b> among 120 students in Second, Third and Final years of Bachelors of Engineering (BE) Program.<br><br>
+					• Won <b>14</b> Project and Paper presentation competitions across Pune, India including an IEEE India chapter Project competition.<br><br>
+					• Won <b>3rd Prize</b> in C programming competition at an event sponsored by IEEE held at PICT, Pune, India.<br><br>
+					• Won <b>two consecutive times</b> in Drag Race – a robotics event held under the National level Symposium “INNOVISION” in 2011 and 2012 held at RSCOE, Pune, India.<br><br>
+					• Won <b>1st Prize</b> in Business Modeling Competition held at RSCOE by the MBA department.
+				</p>
             </div>
         </div>
     </section>    
@@ -216,7 +297,14 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Course Work</h2>
-                <p>To be added</p>
+                <p>
+				<u><b>Masters in Computer Science:</b></u>
+				<br><br><b>Fall 2016:</b> Software Systems Design and Implementation, Principles of Programming languages, Algorithms and Data structures, Computer Networks<br><br>
+				<u><b>Bachelors in Computer Engineering:</b></u>	
+				<br><br><b>2nd year:</b> Discrete Structures, Programming and Problem Solving, Digital Electronics and Logic Design, Data Structures and Algorithms, Microprocessors and Interfacing Techniques, Conputer Graphics, Computer Organization 
+				<br><br><b>3rd year:</b> Database Management System, Data Communication, Microprocessors and Microcontrollers, Digital Signal Processing, Theory of Computation, Principles of Programming Languages, Computer Networks, Finance and Management Information Systems, System Programming and Operating Systems, Software Engineering 
+				<br><br><b>4th year:</b> Design and Analysis of Algorithms, Principles of Compiler Design, Object Oriented Modelling and Design, Artificial Intelligence, Multimedia Systems, Distributed Operating Systems, Advanced Computer Architecture, Cloud Computing, Information Security
+				</p>
             </div>
         </div>
     </section>    
